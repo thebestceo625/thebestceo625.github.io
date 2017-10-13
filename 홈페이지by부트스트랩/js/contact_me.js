@@ -20,16 +20,17 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
-        type: "POST",
+        url: "https://formspree.io/thebestceo625@gmail.com",
+        method: "POST",
         data: {
           name: name,
           phone: phone,
           email: email,
           message: message
         },
+        dataType: "json",
         cache: false,
-        success: function() {
+        success: function(data) {
           // Success message
           $('#success').html("<div class='alert alert-success'>");
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -41,7 +42,7 @@ $(function() {
           //clear all fields
           $('#contactForm').trigger("reset");
         },
-        error: function() {
+        error: function(err) {
           // Fail message
           $('#success').html("<div class='alert alert-danger'>");
           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
