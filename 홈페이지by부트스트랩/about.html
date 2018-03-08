@@ -21,6 +21,10 @@
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+    
+    <!-- slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css">
     <style>
         .about-img{
             margin: 10px;
@@ -28,6 +32,7 @@
         p{
             font-family: Nanum Barun Script;
             font-size: 0.9em;
+            text-align: justify;
         }
       </style>
 
@@ -102,6 +107,23 @@
           <br>
           <img class="about-img" src="img/회장.jpg" alt="학회를 대표하여 학회 소개" style="width: 15em; float: right">
           <p>끊임없는 노력을 통해 학회원들의 지지를 얻어 회장이 되었습니다. 회장 때는 인생에서 가장 많은 발표 자리가 있었습니다. 매 모임마다 모임을 주도하고 리크루팅 기간에는 성균관대생들에게 학회를 소개하는 설명회도 진행하였습니다. 무엇보다 KT와의 산학협력에서 성균관대, 고려대, 중앙대, 이화여대, 4개의 학회와 실무진들 앞에서 학회를 소개하는 시간은 제가 드디어 이 모든 두려움을 극복했다는 장이 되었습니다. </p>
+          <br><br>
+            <h4>마술피리에서 했던 전략서들</h4><br>
+            <h5>마케팅적 지식과 더불어 소비자 중심 사고를 바탕으로한<br> 마케팅 로직과 창의성을 기를 수 있었습니다.</h5><br><br>
+            <div class="projects">
+               <div><img class="project" src="img/전략서/01콜드브루.png"><p class="project-name">자체커리 콜드브루 마케팅 제안</p></div>
+               <div><img class="project" src="img/전략서/02뚜레주르.png"><p class="project-name">자체커리 뚜레주르 신제품 제안</p></div>
+               <div><img class="project" src="img/전략서/03지펠아삭.png"><p class="project-name">제 37회 제일기획 아이디어 페스티벌</p></div>
+               <div><img class="project" src="img/전략서/04아이오페.png"><p class="project-name">제 12회 아모레퍼시픽 브랜드첼린지<br> 본선진출작</p></div>
+               <div><img class="project" src="img/전략서/05에이프릴스킨.png"><p class="project-name">산학협력 에이프릴스킨 마케팅 제안</p></div>
+               <div><img class="project" src="img/전략서/06요기요.png"><p class="project-name">자체커리 요기요 마케팅 제안</p></div>
+               <div><img class="project" src="img/전략서/07자라.png"><p class="project-name">자체커리 자라 마케팅 제안</p></div>
+               <div><img class="project" src="img/전략서/08KTIOT.png"><p class="project-name">KT 청춘기업 공모전</p></div>
+               <div><img class="project" src="img/전략서/09빙그레.png"><p class="project-name">산학협력 빙그레 신제품 제안</p></div>
+               <div><img class="project" src="img/%EC%A0%84%EB%9E%B5%EC%84%9C/%EA%B0%A0%EB%B0%9C_%ED%95%80%EC%85%8B%EB%A7%88%EC%BC%80%ED%8C%85.png"><p class="project-name">개인발표 핀셋마케팅</p></div>
+               <div><img class="project" src="img/%EC%A0%84%EB%9E%B5%EC%84%9C/%EA%B0%A0%EB%B0%9C_%EC%98%B4%EB%8B%88%EC%B1%84%EB%84%90.png"><p class="project-name">개인발표 옴니채널</p></div>
+           </div>
+            
           
         </div>
       </div>
@@ -146,6 +168,25 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    
+    <!-- slider Js -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    
+    <script>
+    /* Image Slider */
+        $(document).ready(function(){
+            $('.projects').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+            });
+        });
+        
+    </script>
 
   </body>
 
