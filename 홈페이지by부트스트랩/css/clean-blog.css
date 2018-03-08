@@ -17,9 +17,7 @@ p {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+ {
   font-weight: 800;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
@@ -349,3 +347,19 @@ footer {
   color: white;
   border: 1px solid #0085A1;
   background-color: #0085A1; }
+
+#mapivideo {
+    margin: 0 auto;
+    align-items: center;
+}
+.project{
+    width: 350px;
+    height: 200px;
+    padding: inherit;
+}
+.project-name{
+    font-size: 1.2em;
+    padding: 0.3em;
+    text-align: left;
+    
+}
